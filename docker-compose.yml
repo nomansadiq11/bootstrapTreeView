@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+    website:
+        container_name: ApplicationInsights
+        build:
+            context: ./
+        volumes:
+            - C:/Data/GIT/repo/nomansadiq11/bootstrapTreeView/app:/usr/share/nginx/html
+        ports:
+            - 3001:80
